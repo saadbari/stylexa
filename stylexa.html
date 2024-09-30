@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stylexa - Your Apparel Buying Partner</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Roboto:wght@300;700&display=swap" rel="stylesheet">
+    <style>
+        /* Basic Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Open Sans', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f4f4f9;
+        }
+
+        header {
+            background: linear-gradient(to right, #0056b3, #00a2ff);
+            padding: 20px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            position: fixed;
+            width: 100%;
+            z-index: 1000;
+        }
+
+        header h1 {
+            color: #fff;
+            text-align: center;
+            font-size: 2.5rem;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: url('your-hero-image.jpg') no-repeat center center/cover;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero h2 {
+            font-size: 4rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.7);
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        .hero p {
+            font-size: 1.5rem;
+            margin-top: 20px;
+            text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Mission Section */
+        .mission {
+            padding: 100px 50px;
+            text-align: center;
+            background-color: #f9f9f9;
+            margin-top: 100px;
+            animation: slideInUp 1s ease-in-out;
+        }
+
+        .mission h2 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+            color: #0056b3;
+        }
+
+        .mission p {
+            font-size: 1.2rem;
+            margin-bottom: 40px;
+            line-height: 1.6;
+        }
+
+        .mission .button {
+            padding: 15px 30px;
+            background-color: #0056b3;
+            color: white;
+            text-transform: uppercase;
+            text-decoration: none;
+            border-radius: 30px;
+            transition: background-color 0.3s ease;
+        }
+
+        .mission .button:hover {
+            background-color: #003e7e;
+        }
+
+        @keyframes slideInUp {
+            from {
+                opacity: 0;
+                transform: translateY(100px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Services Section */
+        .services {
+            display: flex;
+            justify-content: space-around;
+            padding: 100px 50px;
+            background-color: #fff;
+            animation: slideInRight 1s ease-in-out;
+        }
+
+        .services .service-item {
+            background-color: #f0f0f0;
+            padding: 30px;
+            border-radius: 12px;
+            width: 30%;
+            text-align: center;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .services .service-item h3 {
+            margin-bottom: 20px;
+            color: #0056b3;
+        }
+
+        .services .service-item:hover {
+            transform: scale(1.05);
+        }
+
+        .clients {
+            padding: 100px 50px;
+            text-align: center;
+            background-color: #f9f9f9;
+            animation: zoomIn 1s ease-in-out;
+        }
+
+        .clients h2 {
+            margin-bottom: 50px;
+            font-size: 2.5rem;
+            color: #0056b3;
+        }
+
+        .clients img {
+            max-width: 120px;
+            margin: 0 20px;
+            transition: transform 0.3s ease;
+        }
+
+        .clients img:hover {
+            transform: scale(1.2);
+        }
+
+        @keyframes zoomIn {
+            from {
+                opacity: 0;
+                transform: scale(0.8);
+            }
+
+            to {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+
+        /* Contact Section */
+        .contact {
+            background: #0056b3;
+            color: white;
+            padding: 100px 50px;
+            text-align: center;
+        }
+
+        .contact h2 {
+            margin-bottom: 30px;
+            font-size: 2.5rem;
+        }
+
+        .contact p {
+            margin-bottom: 20px;
+            font-size: 1.2rem;
+        }
+
+        .contact a {
+            color: #00a2ff;
+        }
+
+        footer {
+            background: #222;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        footer p {
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>Stylexa Bangladesh</h1>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div>
+            <h2>Your Apparel Buying Partner</h2>
+            <p>Seamlessly connecting you to top fashion manufacturers worldwide</p>
+        </div>
+    </section>
+
+    <!-- Mission Section -->
+    <section class="mission">
+        <h2>Our Mission</h2>
+        <p>We strive to deliver the highest quality garments at competitive prices, with a commitment to timely
+            delivery, ensuring that your business keeps running smoothly. We understand the fashion industry like no
+            other, and we are here to be your strategic partner in the supply chain.</p>
+        <a href="#" class="button">Learn More</a>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services">
+        <div class="service-item">
+            <i class="fas fa-tshirt fa-3x" style="color: #0056b3;"></i>
+            <h3>Sourcing</h3>
+            <p>We connect you with the best factories to source high-quality materials and garments.</p>
+        </div>
+        <div class="service-item">
+            <i class="fas fa-clipboard-check fa-3x" style="color: #0056b3;"></i>
+            <h3>Development</h3>
+            <p>Our R&D teams create samples tailored to your unique designs and brand vision.</p>
+        </div>
+        <div class="service-item">
+            <i class="fas fa-people-carry fa-3x" style="color: #0056b3;"></i>
+            <h3>Quality Control</h3>
+            <p>We ensure stringent quality checks at every stage of production, from sampling to shipment.</p>
+        </div>
+    </section>
+
+    <!-- Clients Section -->
+    <section class="clients">
+        <h2>Our Clients</h2>
+        <div> <img src="data:image/png;base64,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" alt="ZARA | Shop Los Angeles ZARA Store at ..."/>&nbsp;&nbsp;            <img src="https://th.bing.com/th/id/OIP.zebTf7hu3T3ubiA6ll4sJwHaEK?w=315&h=180&c=7&r=0&o=5&pid=1.7" alt="Image result for charlotte russe logo"/>&nbsp;
+            <img src="client3-logo.png" alt="Client 3"><img src="https://ym-inc.com/wp-content/uploads/Aeropostale-logo.png"/><img src="https://www.waldengalleria.com/wp-content/uploads/sites/3/2020/03/Ardene_logo_pink-box-600x315.jpg" alt="Ardene Opening at Walden Galleria Just in Time for Summer - Walden Galleria"/>
+            <img src="client4-logo.png" alt="Client 4">
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact">
+        <h2>Contact Us</h2>
+        <p>Corporate Office Address: House No. 455 (2nd Floor), Road No. 31, New DOHS Mohakhali, Dhaka – 1206,
+            Bangladesh</p>
+        <p>Email: <a href="mailto:stylexa@stylexabd.com">stylexa@stylexabd.com</a></p>
+        <p>Phone: +880-2-48810486</p>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Stylexa Bangladesh. All Rights Reserved.</p>
+    </footer>
+
+</body>
+
+</html>
